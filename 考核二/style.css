@@ -1,0 +1,406 @@
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+/* 以上为初始化 */
+.head {
+    width: 1560px;
+    height: 220px;
+    margin: 0 auto;
+}
+
+.logo p {
+    color: #fe6161;
+    font-weight: 700;
+    line-height: 25px;
+    margin-left: 172px;
+    font-size: 16px;
+}
+
+.logo p a {
+    color: black;
+}
+
+.logo {
+    background: url(top_bg.gif) no-repeat;
+    position: absolute;
+    float: left;
+    width: 1560px;
+    height: 220px;
+    margin: 0 auto;
+    padding: 0 2px;
+
+}
+
+
+
+.logo .biao {
+    position: absolute;
+    left: 151px;
+    top: 40px;
+
+}
+
+.logo ul {
+    float: left;
+    position: absolute;
+    bottom: 10px;
+    padding: 0 0 0 112px;
+
+}
+
+
+
+.logo li {
+    float: left;
+    display: block;
+    width: 116px;
+    height: 40px;
+    color: #dfe6e7;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    background: url(head-bg.png);
+}
+
+
+
+
+
+.logo ul li:hover {
+    background: url(hover-bg.png);
+}
+
+
+
+/* 分割线 */
+.banner .w {
+    position: relative;
+    width: 1550px;
+    height: 434px;
+    margin: 0 auto;
+}
+
+.w img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 手机案例部分 */
+.anli {
+    width: 1350px;
+    height: 631px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.biao1 {
+    float: left;
+    width: 281px;
+    height: 631px;
+    border: 5px #363636 solid;
+    margin-left: 135px;
+
+}
+
+.biao1 img {
+    position: relative;
+    right: 1px;
+    top: -5px;
+    width: 291px;
+    height: 80px;
+}
+
+.x {
+    border: 5px rgba(0, 0, 0, 0) solid;
+}
+
+.x .da,
+.xiao {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+
+}
+
+
+.x .da {
+    background: url(head-bg.png);
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.x .xiao {
+    background-color: #adadad;
+    color: black;
+}
+
+.x span {
+    float: left;
+    margin-right: 15px;
+}
+
+.biao2 {
+    float: left;
+    width: 788px;
+    height: 650px;
+    margin-left: 50px;
+}
+
+.biao2 .shang li {
+    float: left;
+    width: 67px;
+    height: 30px;
+    border: 1px #afafaf solid;
+    color: black;
+    padding-left: 10px;
+    line-height: 30px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+
+.biao2 .shang .laoda {
+    border-top: 3px #ff0b0b solid;
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+
+.xia {
+    float: left;
+    width: 840px;
+    height: 600px;
+    border: 2px #adadad solid;
+
+
+}
+
+.xia div {
+    float: left;
+    width: 880px;
+    height: 530px;
+    margin-top: 80px;
+    margin-left: 30px;
+
+}
+
+.xia li {
+    float: left;
+    width: 240px;
+    height: 233px;
+    margin-right: 15px;
+    line-height: 20px;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.xia li span {
+    float: left;
+    width: 235px;
+    height: 213px;
+    border: 2px #adadad solid;
+}
+
+.xia li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 手机案例结束 */
+.o {
+    width: 1550px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.jianjie {
+
+    position: relative;
+    left: 5px;
+    width: 1550px;
+    height: 500px;
+    background-color: #dfdfdf;
+    margin-top: 70px;
+
+}
+
+.jianjie .z-jianjie {
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    width: 1265px;
+    height: 430px;
+    background-color: #fff;
+
+}
+
+.z-jianjie input {
+    position: absolute;
+    right: 95px;
+    top: 45px;
+    width: 55px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #e2e2e2;
+    border: 1px solid #afafaf;
+}
+
+.z-jianjie .wuyu {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 18px;
+}
+
+.z-jianjie .wuyu h3 {
+    color: black;
+}
+
+.z-jianjie .wuyu h5 {
+    color: #afafaf;
+}
+
+.kuai {
+    position: relative;
+    left: 26px;
+    top: 100px;
+    width: 1180px;
+    height: 300px;
+    border-top: 2px #afafaf solid;
+}
+
+.kuai div {
+
+    width: 1180px;
+    height: 300px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: black;
+
+}
+
+.kuai p {
+    margin-left: 2px;
+    line-height: 36px;
+}
+
+.kuai span {
+
+    float: left;
+    width: 280px;
+    height: 215px;
+}
+
+.kuai span img {
+    width: 270px;
+    height: 205px;
+}
+
+/* 简介部分结束 */
+.jiewei {
+    width: 1550px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 5px;
+    background: url(f_bj.jpg);
+}
+
+.jiewei .b {
+    position: relative;
+}
+
+.jiewei ul {
+    margin-left: 180px;
+    margin-top: 10px;
+    float: left;
+    position: absolute;
+    top: 5px;
+}
+
+.jiewei ul img {
+    float: right;
+    width: 2px;
+    height: 28px;
+}
+
+.jiewei li {
+    float: left;
+    display: block;
+    width: 140px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
