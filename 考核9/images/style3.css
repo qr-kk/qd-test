@@ -1,0 +1,480 @@
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+/* 以上为初始化 */
+.zong {
+    width: 1161px;
+    height: 2251px;
+    margin: 0 auto;
+    background-color: #272f35;
+}
+
+.box1 {
+    width: 1161px;
+    height: 362px;
+    background: url(1.jpg);
+    background-size: cover;
+}
+
+
+.q1 {
+    width: 278px;
+    height: 296px;
+    background: url(nav-bg.jpg);
+    background-size: cover;
+    border-bottom: 10px solid #e74c3c;
+    margin-left: 115px;
+}
+
+.q2 {
+    width: 278px;
+    height: 63px;
+    padding-top: 23px;
+
+    text-align: center;
+}
+
+.q3 {
+    width: 278px;
+    height: 10px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.q3 img {
+    height: 10px;
+}
+
+.q4 {
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.q4 li {
+    width: 278px;
+    margin-bottom: 18px;
+    height: 12px;
+    line-height: 12px;
+    color: #000;
+    text-align: center;
+
+}
+
+/* 中间部分 */
+.box2 {
+    width: 1161px;
+    height: 950px;
+    background-color: #eeeeee;
+}
+
+.w1 {
+    width: 330px;
+    height: 40px;
+    color: #e74c3c;
+    font-size: 28px;
+    margin-left: 115px;
+    padding-top: 50px;
+}
+
+.t9 {
+    width: 330px;
+    height: 40px;
+    color: #e74c3c;
+    font-size: 28px;
+    margin-left: 115px;
+
+}
+
+.w2 {
+    width: 940px;
+    height: 310px;
+    margin-left: 115px;
+    margin-top: 25px;
+}
+
+.w2 li {
+    float: left;
+    width: 224px;
+    height: 310px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.w3 {
+    width: 224px;
+    height: 168px;
+}
+
+.w3 img {
+    width: 224px;
+    height: 168px;
+}
+
+.w4 {
+    width: 160px;
+    height: 18px;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #000;
+    font-size: 14px;
+}
+
+.w5 {
+    width: 205px;
+    height: 80px;
+    line-height: 20px;
+    color: #c1c1c1;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.w6 {
+    width: 940px;
+    height: 310px;
+    margin-left: 115px;
+    margin-top: 40px;
+}
+
+.w6 li {
+    float: left;
+    width: 224px;
+    height: 310px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.box3 {
+    width: 1161px;
+    height: 342px;
+    background: url(bg_1.jpg);
+    background-size: cover;
+}
+
+.e1 {
+    width: 180px;
+    height: 40px;
+    color: #e74c3c;
+    font-size: 28px;
+    margin-left: 115px;
+    padding-top: 50px;
+}
+
+.e2 {
+    width: 972px;
+    height: 130px;
+    margin-left: 115px;
+}
+
+.e2 li {
+    float: left;
+    width: 294px;
+    height: 130px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.e3 {
+    width: 312px;
+    height: 60px;
+    line-height: 20px;
+    color: #000;
+}
+
+.e4 {
+    width: 312px;
+    height: 60px;
+    line-height: 20px;
+    color: #000;
+    margin-top: 20px;
+}
+
+.e5 {
+    width: 70px;
+    height: 20px;
+    color: #e74c3c;
+    margin-top: 46px;
+    line-height: 20px;
+    margin-left: 115px;
+    font-size: 13px;
+}
+
+.box4 {
+    width: 1161px;
+    height: 378px;
+    background-color: #fff;
+
+}
+
+.t1 {
+    width: 310px;
+    height: 40px;
+    color: #e74c3c;
+    font-size: 46px;
+    margin-left: 115px;
+    padding-top: 50px;
+}
+
+.t2 {
+    width: 975px;
+    height: 169px;
+    margin-top: 40px;
+    margin-left: 115px;
+}
+
+.t2 li {
+    float: left;
+    width: 285px;
+    height: 169px;
+    margin-right: 40px;
+}
+
+.t3 {
+    width: 95px;
+    height: 20px;
+    color: #000;
+    font-size: 14px;
+}
+
+.t4 {
+    width: 315px;
+    height: 100px;
+    line-height: 20px;
+    color: #9c9c9c;
+    margin-top: 15px;
+}
+
+.t5 {
+    width: 70px;
+    height: 20px;
+    color: #e74c3c;
+    margin-top: 25px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.box6 {
+    width: 1161px;
+    height: 330px;
+    background-color: #272f35;
+}
+
+.box5 {
+    position: relative;
+    width: 930px;
+    height: 330px;
+    margin-left: 115px;
+
+}
+
+.a1 {
+    width: 404px;
+    height: 74px;
+}
+
+.a1 ul {
+    width: 404px;
+    height: 20px;
+    padding-left: 0;
+}
+
+.a2 {
+    width: 404px;
+    height: 22px;
+}
+
+.a1 li {
+    width: 72px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    border-right: 1px dashed #606265;
+    margin-bottom: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+.a1 ul .liwai {
+    border-right: 0;
+}
+
+.s1 {
+
+    float: left;
+    width: 930px;
+    height: 186px;
+    border-top: 1px solid #727375;
+    border-bottom: 1px solid #727375;
+}
+
+.s2 {
+    float: left;
+    width: 235px;
+    height: 166px;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+.s2 img {
+    width: 153px;
+    height: 55px;
+}
+
+.s3 {
+    float: left;
+    width: 233px;
+    height: 186px;
+}
+
+.s4 {
+    width: 100px;
+    height: 22px;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.s5 {
+    width: 164px;
+    height: 90px;
+    line-height: 18px;
+    color: #686d72;
+}
+
+.d1 {
+    position: absolute;
+    left: 478px;
+    float: left;
+    width: 440px;
+    height: 186px;
+}
+
+.d2 {
+    width: 170px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    color: #fff;
+    font-size: 22px;
+}
+
+
+.d3 input {
+    width: 270px;
+    height: 40px;
+    color: #d2d1d1;
+    padding: 0;
+    border: 1px solid#5e6468;
+}
+
+.d3 button {
+    width: 132px;
+    height: 40px;
+    background-color: #fd5032;
+    color: #fff;
+    margin-left: 2px;
+    border: 1px solid#5e6468;
+}
+
+.f1 {
+    float: left;
+    width: 345px;
+    height: 14px;
+    margin-top: 22px;
+    color: #6f7072;
+}
+
+.f2 {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url(social.png) no-repeat -34px -73px;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+
+.f3 {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url(social.png) no-repeat -34px -36px;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+
+.f4 {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url(social.png) no-repeat -34px 3px;
+    margin-top: 16px;
+}

@@ -1,0 +1,553 @@
+* 把我们所有标签的内外边距清零 */ * {
+    margin: 0;
+    padding: 0
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+/* 以上为初始化 */
+.zong {
+    width: 1161px;
+    height: 1910px;
+    margin: 0 auto;
+
+    background-color: #fff;
+}
+
+.box1 {
+    width: 1161px;
+    height: 362px;
+    background: url(1.jpg);
+    background-size: cover;
+}
+
+
+.q1 {
+    width: 278px;
+    height: 296px;
+    background: url(nav-bg.jpg);
+    background-size: cover;
+    border-bottom: 10px solid #e74c3c;
+    margin-left: 115px;
+}
+
+.q2 {
+    width: 278px;
+    height: 63px;
+    padding-top: 23px;
+
+    text-align: center;
+}
+
+.q3 {
+    width: 278px;
+    height: 10px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.q3 img {
+    height: 10px;
+}
+
+.q4 {
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.q4 li {
+    width: 278px;
+    margin-bottom: 18px;
+    height: 12px;
+    line-height: 12px;
+    color: #000;
+    text-align: center;
+
+}
+
+.box2 {
+    position: relative;
+    width: 1161px;
+    height: 500px;
+}
+
+.k1 {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    margin-left: -120px;
+    width: 110px;
+    height: 90px;
+}
+
+.k2 {
+    position: relative;
+
+    width: 110px;
+    height: 90px;
+}
+
+.w1 {
+    float: left;
+    width: 388px;
+    height: 410px;
+    margin-left: 46px;
+    padding-top: 47px;
+}
+
+.w2 {
+    width: 130px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 85px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.w3 {
+    width: 390px;
+    height: 258px;
+    background: url(11.jpg);
+    background-size: cover;
+}
+
+.w4 {
+    float: left;
+    width: 530px;
+    height: 410px;
+    margin-left: 140px;
+}
+
+.w5 {
+    width: 110px;
+    height: 30px;
+    margin-left: 15px;
+    color: #fd5032;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.t9 {
+    width: 110px;
+    height: 30px;
+    margin-left: 15px;
+    color: #fd5032;
+    font-size: 22px;
+
+}
+
+.w6 {
+    width: 490px;
+    height: 40px;
+    line-height: 20px;
+    margin-top: 70px;
+    color: #6f6f6f;
+}
+
+.w7 {
+    position: relative;
+    left: -26px;
+    width: 553px;
+
+    line-height: 24px;
+    color: #d1d1d1;
+    transform: scale(.9);
+}
+
+.w8 button {
+    width: 112px;
+    height: 40px;
+    background-color: #fd5032;
+    border: 0;
+    margin-top: 7px;
+    color: #fff;
+}
+
+.box3 {
+    width: 1161px;
+    height: 546px;
+    background: url(bg_1.jpg);
+    background-size: cover;
+}
+
+.e1 {
+    width: 160px;
+    height: 22px;
+    line-height: 22px;
+    color: #fd5032;
+    font-size: 22px;
+    padding-top: 25px;
+    margin-left: 118px;
+}
+
+.e2 {
+    width: 904px;
+    height: 33px;
+    color: #000;
+    margin-left: 118px;
+    margin-top: 15px;
+}
+
+.e3 {
+    transform: scale(.9);
+    color: #000;
+    margin-top: 15px;
+    margin-left: 63px;
+}
+
+.box3 ul {
+    margin-left: 140px;
+    padding-left: 0;
+    width: 1022px;
+    height: 120px;
+}
+
+.box3 li {
+    float: left;
+    width: 290px;
+    height: 127px;
+}
+
+.e4 {
+    float: left;
+    position: relative;
+    top: 13px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #fff;
+    color: #a9a8a8;
+    margin-bottom: 80px;
+
+}
+
+.e5 {
+    color: #000;
+    margin-top: 25px;
+    width: 200px;
+    height: 22px;
+    font-size: 13px;
+
+
+}
+
+.e6 {
+    color: #000;
+    position: relative;
+    left: -10px;
+    width: 284px;
+    height: 80px;
+    line-height: 20px;
+    font-size: 12px;
+    transform: scale(.9);
+
+}
+
+div .box3 .e7 {
+    width: 855px;
+    height: 120px;
+
+    margin-left: 0;
+}
+
+.e7 li {
+    position: relative;
+    top: 40px;
+    left: 34px;
+    width: 205px;
+    height: 60px;
+    margin-right: 60px;
+    color: #000;
+    font-size: 12px;
+}
+
+.e7 li input {
+    width: 205px;
+    height: 30px;
+    border: 0;
+    color: #d5d5d5;
+    text-indent: 1em;
+}
+
+ul li .e8 {
+    background: url(icon.png) no-repeat;
+    background-position: 5px 8px;
+    width: 200px;
+    height: 30px;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+.e7 select {
+    width: 205px;
+    height: 30px;
+    color: #d5d5d5;
+    border: 0;
+}
+
+.e7 button {
+    width: 112px;
+    height: 32px;
+    background-color: #fd5032;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border: 0;
+    margin-top: 17px;
+}
+
+.box4 {
+    width: 1168px;
+    height: 258px;
+}
+
+.t1 {
+    width: 120px;
+    height: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 115px;
+    color: #000;
+}
+
+.box4 ul {
+    padding-left: 0;
+    margin-left: 115px;
+}
+
+.box4 li {
+    float: left;
+    width: 224px;
+    height: 168px;
+    margin-right: 10px;
+}
+
+.box4 li img {
+    width: 224px;
+    height: 168px;
+}
+
+.box6 {
+    width: 1161px;
+    height: 330px;
+    background-color: #272f35;
+}
+
+.box5 {
+    position: relative;
+    width: 930px;
+    height: 330px;
+    margin-left: 115px;
+
+}
+
+.a1 {
+    width: 404px;
+    height: 74px;
+}
+
+.a1 ul {
+    width: 404px;
+    height: 20px;
+    padding-left: 0;
+}
+
+.a2 {
+    width: 404px;
+    height: 22px;
+}
+
+.a1 li {
+    width: 72px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    border-right: 1px dashed #606265;
+    margin-bottom: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+.a1 ul .liwai {
+    border-right: 0;
+}
+
+.s1 {
+
+    float: left;
+    width: 930px;
+    height: 186px;
+    border-top: 1px solid #727375;
+    border-bottom: 1px solid #727375;
+}
+
+.s2 {
+    float: left;
+    width: 235px;
+    height: 166px;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+.s2 img {
+    width: 153px;
+    height: 55px;
+}
+
+.s3 {
+    float: left;
+    width: 233px;
+    height: 186px;
+}
+
+.s4 {
+    width: 100px;
+    height: 22px;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.s5 {
+    width: 164px;
+    height: 90px;
+    line-height: 18px;
+    color: #686d72;
+}
+
+.d1 {
+    position: absolute;
+    left: 478px;
+    float: left;
+    width: 440px;
+    height: 186px;
+}
+
+.d2 {
+    width: 170px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    color: #fff;
+    font-size: 22px;
+}
+
+
+.d3 input {
+    width: 270px;
+    height: 40px;
+    color: #d2d1d1;
+    padding: 0;
+    border: 1px solid#5e6468;
+}
+
+.d3 button {
+    width: 132px;
+    height: 40px;
+    background-color: #fd5032;
+    color: #fff;
+    margin-left: 2px;
+    border: 1px solid#5e6468;
+}
+
+.f1 {
+    float: left;
+    width: 345px;
+    height: 14px;
+    margin-top: 22px;
+    color: #6f7072;
+}
+
+.f2 {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url(social.png) no-repeat -34px -73px;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+
+.f3 {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url(social.png) no-repeat -34px -36px;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+
+.f4 {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url(social.png) no-repeat -34px 3px;
+    margin-top: 16px;
+}

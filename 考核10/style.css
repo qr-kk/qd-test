@@ -1,0 +1,341 @@
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+/* 以上为初始化 */
+.zong {
+    width: 720px;
+    height: 325px;
+    margin: 400px auto;
+    background-color: rgba(0, 0, 0, .1);
+
+}
+
+.box1 {
+    position: relative;
+    width: 720px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    color: #000;
+
+}
+
+.box1 .yan2 {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 133px;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.box1 .yan1 {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 133px;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+}
+
+
+
+.box1 .yan2 span {
+    position: absolute;
+
+    border-radius: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    animation: mo4 1s linear infinite alternate;
+}
+
+
+.box1 .yan1 span {
+    position: absolute;
+
+    border-radius: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    animation: mo4 1s linear infinite alternate;
+}
+
+.k1 {
+    width: 470px;
+
+    margin-left: 132px;
+}
+
+.box2 {
+
+
+    width: 720px;
+    height: 195px;
+    margin-top: 20px;
+
+}
+
+.l2 {
+    float: left;
+}
+
+.l1 {
+    float: left;
+    margin-top: 15px;
+    width: 158px;
+    height: 158px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background: url(标头使用.jpg);
+    background-size: cover;
+}
+
+.l2 {
+    padding-left: 40px;
+    width: 360px;
+    height: 195px;
+    border-left: 1px solid rgb(150, 149, 149);
+    font-size: 14px;
+
+}
+
+.l3 {
+    width: 160px;
+    height: 45px;
+    margin-left: 10px;
+
+
+}
+
+.l3 li {
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    width: 70px;
+    height: 40px;
+
+
+}
+
+.l3 li:hover {
+    border-bottom: 1px solid #000;
+    font-weight: 700;
+}
+
+
+.l7 div {
+    float: left;
+}
+
+.l7 {
+
+    width: 330px;
+    height: 40px;
+    border-bottom: 1px solid #000;
+    margin-top: 10px;
+    background-color: #fff;
+    margin-left: 10px;
+}
+
+.l7 div {
+    width: 75px;
+    padding-left: 5px;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-right: 1px solid #000;
+}
+
+.l7 input {
+    width: 244px;
+    height: 40px;
+    border: 0;
+    padding-left: 5px;
+}
+
+.l4 {
+    width: 330px;
+    margin-left: 10px;
+    height: 40px;
+    border-bottom: 1px solid #000;
+    margin-top: 20px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.l4 input {
+    width: 205px;
+    height: 40px;
+    border: 0;
+    padding-left: 5px;
+}
+
+.l4 button {
+    float: right;
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.l4 button:hover {
+    color: skyblue;
+}
+
+.c1 {
+    position: relative;
+    transform-style: preserve-3d;
+    float: left;
+    width: 330px;
+    height: 28px;
+    backface-visibility: hidden;
+    transition: all .4s;
+}
+
+.c1 .m1 {
+    position: absolute;
+    width: 330px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #f9cc9d;
+    border: 0;
+    color: #fff;
+    transform: translateZ(14px);
+}
+
+.c1:hover {
+    transform: rotateX(90deg);
+}
+
+.c1 .m2 {
+
+    position: absolute;
+    top: 0;
+    width: 330px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #f9cc9d;
+    border: 0;
+    color: #fff;
+    transform: translateY(14px) rotateX(-90deg);
+}
+
+@keyframes mo4 {
+    0% {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+
+    25% {
+        position: absolute;
+        left: 10px;
+        top: 0px;
+    }
+
+    50% {
+        position: absolute;
+        top: 10px;
+        left: 0px;
+    }
+
+    75% {
+        position: absolute;
+        left: 10px;
+        top: 20px;
+    }
+
+    100% {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+}

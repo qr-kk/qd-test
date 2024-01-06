@@ -1,0 +1,393 @@
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+/* 以上为初始化 */
+.box1 {
+    position: relative;
+    margin: 0 auto;
+    width: 1536px;
+    height: 587px;
+    background: url(banner.png);
+    background-size: cover;
+}
+
+.q2 {
+    position: absolute;
+    left: 70px;
+    bottom: -11px;
+    width: 1300px;
+    height: 585px;
+    background: url(object5.png);
+    background-size: cover;
+}
+
+.q1 {
+    position: absolute;
+    left: 260px;
+    bottom: -12px;
+    width: 1078px;
+    height: 243px;
+    background: url(banner_title.png);
+    background-size: cover;
+}
+
+.q3 {
+    position: absolute;
+    left: 500px;
+    top: 33px;
+    width: 144px;
+    height: 98px;
+    background: url(index_sp.png);
+    background-size: cover;
+}
+
+.box2 {
+    margin: 0 auto;
+    width: 1536px;
+    height: 200px;
+
+}
+
+.a2 {
+
+    width: 140px;
+    height: 200px;
+    margin-left: 700px;
+}
+
+.a2 li {
+
+    width: 140px;
+    height: 180px;
+
+
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.a2 li img {
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 140px;
+    height: 140px;
+}
+
+
+
+.a2 div {
+    width: 140px;
+    height: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+}
+
+.box3 {
+    margin: 0 auto;
+    width: 1536px;
+    animation: mo1 3s forwards;
+
+    border: 1px solid #fcb72b;
+    background-color: #ebebeb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.e1 span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.e1 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-left: 615px;
+    margin-top: 30px;
+}
+
+@keyframes mo1 {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 2572px;
+    }
+}
+
+.e4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #000;
+    width: 1536px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+}
+
+.yidong1 {
+
+    animation: yi1 2s forwards;
+    animation-delay: 3s;
+
+}
+
+.yidong4 {
+    position: absolute;
+    top: 0;
+    animation: yi2 2s forwards;
+    animation-delay: 3s;
+
+}
+
+.likai {
+
+
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    animation: yi3 2s forwards;
+    animation-delay: 4s;
+}
+
+.yidong3 {
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+}
+
+@keyframes yi3 {
+    0% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes yi1 {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -535px;
+    }
+}
+
+@keyframes yi2 {
+    0% {
+        left: 0;
+
+    }
+
+    100% {
+        top: 0;
+        left: 535px;
+    }
+}
+
+
+.e1 span img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.box3 table {
+    font-size: 18px;
+    color: #000;
+    border: 1px solid #000;
+    border-width: 1px 0px 0px 1px;
+    border-color: #000;
+    text-align: center;
+    margin-left: 75px;
+}
+
+.box3 td {
+    border: solid #000;
+    border-width: 0px 1px 1px 0px;
+}
+
+.e2 {
+    background-color: #e6e6e6;
+}
+
+.e3 {
+    background-color: #fff;
+}
+
+.t1 {
+    width: 102px;
+    height: 70px;
+}
+
+.t2 {
+    width: 416px;
+    height: 70px;
+}
+
+.t3 {
+    width: 170px;
+    height: 70px;
+}
+
+.t4 {
+    width: 170px;
+    height: 70px;
+}
+
+.t5 {
+    width: 408px;
+    height: 70px;
+}
+
+.t6 {
+    width: 102px;
+    height: 210px;
+}
+
+.t7 {
+    width: 102px;
+    height: 70px;
+}
+
+.y1 {
+    width: 1380px;
+    height: 120px;
+    line-height: 40px;
+    color: #000;
+    font-size: 24px;
+    margin-left: 75px;
+}
+
+.y2 {
+    width: 1380px;
+    height: 80px;
+    line-height: 40px;
+    color: #000;
+    font-size: 24px;
+    margin-left: 75px;
+}
+
+.y3 {
+    width: 1380px;
+    height: 400px;
+    line-height: 40px;
+    color: #000;
+    font-size: 24px;
+    margin-left: 75px;
+}
+
+.y4 {
+    width: 1380px;
+    height: 520px;
+    line-height: 40px;
+    color: #000;
+    font-size: 24px;
+    margin-left: 75px;
+}
+
+.box5 {
+    margin: 0 auto;
+    width: 1536px;
+    height: 251px;
+    background-color: #222327;
+}
+
+.box6 {
+    width: 1536px;
+    height: 151px;
+    background-color: #fff;
+}
+
+.box6 img {
+    width: 1536px;
+    height: 151px;
+}
+
+.d1 {
+    width: 1536px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}

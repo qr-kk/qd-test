@@ -1,0 +1,280 @@
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+/* 以上为初始化 */
+.zong {
+    width: 993px;
+    height: 818px;
+    margin: 0 auto;
+}
+
+a {
+    color: #fff;
+}
+
+/* 头部广告部分 */
+.banner {
+    position: relative;
+    width: 993px;
+    height: 394px;
+    margin: 0 auto;
+    background: url(header.jpg) 100% 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 85px;
+    top: 28px;
+    width: 88px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 23px;
+    color: #fff;
+}
+
+.box {
+    position: absolute;
+    left: 85px;
+    top: 78px;
+    width: 428px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+}
+
+.box li {
+    float: left;
+    margin-right: 41px;
+}
+
+ul .liwai {
+    margin-right: 0;
+}
+
+.box2 {
+    position: absolute;
+    top: 16px;
+    right: 120px;
+    width: 107px;
+    height: 15px;
+}
+
+.box2 li {
+    float: left;
+    width: 64px;
+    height: 15px;
+    line-height: 15px;
+    border-right: 1px #fff solid;
+    text-align: center;
+}
+
+ul .liwai1 {
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    width: 36px;
+    border-right: 0;
+}
+
+.box3 {
+    position: absolute;
+    top: 179px;
+    left: 220px;
+    width: 224px;
+    height: 62px;
+}
+
+.box3 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 底部部分 */
+.end {
+    width: 860px;
+    height: 290px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.box4 {
+    float: left;
+    width: 617px;
+    height: 276px;
+}
+
+.box4 li {
+    float: left;
+    width: 300px;
+    height: 94px;
+    background-color: #f0f0f0;
+    border: 1px #fff solid;
+}
+
+.box4 span {
+    float: left;
+    width: 75px;
+    height: 87px;
+}
+
+.box4 span img {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.box4 .lan {
+    margin-top: 13px;
+    color: #73b3cf;
+    font-weight: 700;
+    font-size: 13px;
+
+}
+
+.box4 .hei {
+    float: left;
+    margin-top: 4px;
+    line-height: 16px;
+    width: 210px;
+    height: 16px;
+    font-size: 12px;
+    color: black;
+
+}
+
+.box5 {
+    float: right;
+    width: 232px;
+    height: 242px;
+    margin-left: 7px;
+    border: 1px #efefef solid;
+}
+
+.box6 {
+    float: left;
+}
+
+.box6 li {
+    float: left;
+    width: 115px;
+    height: 22px;
+}
+
+.laoda {
+    background: url(7.2.jpg);
+    color: #4cacc9;
+    text-align: center;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.laoer {
+    background: url(7.1.jpg);
+    text-align: right;
+}
+
+.laoer a {
+    color: #000;
+
+}
+
+.o {
+    float: left;
+    width: 218px;
+    height: 56px;
+}
+
+.o span {
+    float: left;
+    width: 92px;
+    height: 56px;
+}
+
+.o li {
+    margin-top: 8px;
+    color: #000;
+}
+
+.d {
+    float: left;
+}
+
+div .d li {
+    float: left;
+    list-style-type: inherit;
+    margin-left: 15px;
+    margin-top: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    width: 214px;
+}
